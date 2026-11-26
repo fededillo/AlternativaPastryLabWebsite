@@ -4,62 +4,75 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alternativa Pastry Lab</title>
-  <meta name="description" content="Laboratorio di pasticceria. Catalogo, presentazione e richieste.">
+  <meta name="description" content="Una dolce alternativa da un laboratorio artigianale di pasticceria senza glutine e inclusiva, a Verona.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="/">
-      <strong>Alternativa</strong>
-      <span>Pastry Lab</span>
-    </a>
-    <nav class="nav" aria-label="Principale">
-      <a href="/" aria-current="page">Home</a>
-      <a href="/catalogo.html">Catalogo</a>
-      <a href="/chi-sono.html">Chi sono</a>
-      <a href="/richiesta.html">Richiedi <span class="badge" data-richiesta-count hidden>0</span></a>
-    </nav>
-  </header>
+<body class="home">
+  <a class="wa-float" href="https://wa.me/393520455901?text=Ciao%20Chiara%2C%20vorrei%20ordinare">
+    <span>Hey</span>
+    <span>Ordina su</span>
+    <strong>WhatsApp!</strong>
+  </a>
 
-  <main class="wrap">
-    <section class="hero">
-      <div>
-        <p class="eyebrow">Laboratorio di pasticceria</p>
-        <h1>Pasticceria su richiesta.</h1>
-      </div>
-      <p class="lede">Un sito essenziale per presentare il laboratorio, mostrare il catalogo e raccogliere richieste. I prodotti si aggiungono dopo, in un unico file.</p>
-      <div class="actions">
-        <a class="button" href="/catalogo.html">Vai al catalogo</a>
-        <a class="button secondary" href="/chi-sono.html">Chi sono</a>
+  <main>
+    <section class="scroll-cue" aria-label="Introduzione">
+      <p>Scrooool<br>down</p>
+    </section>
+
+    <section class="statement">
+      <h1>
+        una dolce alternativa<br>
+        che arriva da un laboratorio<br>
+        artigianale di pasticceria<br>
+        senza glutine e inclusiva
+      </h1>
+    </section>
+
+    <section class="sweets" aria-labelledby="sweets-title">
+      <h2 id="sweets-title">Sweets for</h2>
+      <div class="sweets-grid">
+        <img src="/images/muffin.jpg" alt="Muffin in pirottini colorati sul banco del laboratorio">
+        <img src="/images/cioccolato.jpg" alt="Ganache al cioccolato versata su una crostata">
+        <img src="/images/chiara.jpg" alt="Chiara decora una torta nel laboratorio">
       </div>
     </section>
 
-    <section class="grid steps" aria-label="Come funziona">
-      <article class="panel">
-        <span>01</span>
-        <h2>Guardi</h2>
-        <p>Il catalogo elenca solo i prodotti presenti nel file. Oggi è vuoto.</p>
+    <section class="story">
+      <div>
+        <h2>Mangiare senza glutine non significa dover rinunciare alla dolcezza.</h2>
+        <p>Sono Chiara e la mia passione per la pasticceria nasce anche da un'esperienza personale: essere celiaca. Conoscere da vicino il mondo senza glutine mi ha portata a trasformare una necessità in una passione, e quella passione in un progetto: Alternativa Pastry Lab.</p>
+        <p>Il mio obiettivo è creare dolci senza glutine capaci di conquistare tutti, senza rinunciare al gusto, alla bellezza e al piacere di concedersi qualcosa di speciale.</p>
+      </div>
+      <img src="/images/chiara.jpg" alt="Chiara al lavoro su una torta nel laboratorio di Verona">
+    </section>
+
+    <section class="paths" aria-label="Prossimi passi">
+      <article>
+        <p>dai una sbirciatina</p>
+        <a class="pill" href="/catalogo.html">Sfoglia il catalogo</a>
       </article>
-      <article class="panel">
-        <span>02</span>
-        <h2>Chiedi</h2>
-        <p>Si può scrivere una richiesta libera, anche senza scegliere una scheda.</p>
+      <article>
+        <p>hai dei dubbi?</p>
+        <a class="pill" href="/richiesta.html">Chiedi informazioni</a>
       </article>
-      <article class="panel">
-        <span>03</span>
-        <h2>Concordi</h2>
-        <p>Il modulo raccoglie nome, contatto e messaggio. L’invio email arriva in un secondo momento.</p>
+      <article>
+        <p>ordina la felicità</p>
+        <a class="pill" href="https://wa.me/393520455901?text=Ciao%20Chiara%2C%20vorrei%20ordinare">Ordina su WhatsApp</a>
       </article>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <span>Alternativa Pastry Lab</span>
-    <span>© <span data-year></span></span>
+  <footer class="home-footer">
+    <nav aria-label="Contatti">
+      <a href="/catalogo.html">Catalogo</a>
+      <span>Instagram</span>
+      <a href="/richiesta.html">E-mail</a>
+      <a href="https://wa.me/393520455901">WhatsApp</a>
+    </nav>
+    <p>Alternativa Pastry Lab - P.I. 05134490233 - Verona - 37131 (VR)</p>
   </footer>
-  <script type="module" src="/js/app.js"></script>
 </body>
 </html>
