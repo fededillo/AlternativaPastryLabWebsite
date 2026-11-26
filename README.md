@@ -1,6 +1,6 @@
 # Alternativa Pastry Lab
 
-Sito statico per Cloudflare Pages. Il catalogo è vuoto: i prodotti si aggiungono in `public/data/prodotti.json`, senza immagini.
+Sito statico su Cloudflare Workers. Il catalogo è vuoto: i prodotti si aggiungono in `public/data/prodotti.json`, senza immagini.
 
 Pagine:
 
@@ -14,10 +14,10 @@ Pagine:
 Dalla cartella del progetto:
 
 ```bash
-npx wrangler pages dev public
+npx wrangler dev
 ```
 
-Apri l’indirizzo che Wrangler stampa. L’invio del modulo funziona solo con questo comando, perché usa la funzione in `functions/api/richiesta.js`.
+Apri l’indirizzo che Wrangler stampa. L’invio del modulo passa da `worker.js`.
 
 ## Prodotti
 
@@ -41,12 +41,10 @@ Non c’è un campo immagine: le schede restano solo testo.
 2. Se GitHub Desktop chiede di creare un repository, conferma.
 3. Scrivi un commit e pubblica il repository con Publish repository.
 
-## Cloudflare Pages
+## Cloudflare
 
-Nel pannello Cloudflare: Workers & Pages → Create → Pages → Connect to Git.
+Il sito si pubblica con Workers Builds. Il comando di deploy è `npx wrangler deploy`, senza comando di build.
 
-- Framework preset: None
-- Build command: vuoto
-- Build output directory: `public`
+In `wrangler.toml`, `name` deve essere identico al nome del Worker nel pannello Cloudflare. Se non coincide, la build segnala di aggiornare il file e apre una pull request.
 
-La funzione `functions/api/richiesta.js` riceve il modulo e risponde con un codice. Non invia ancora email e non salva l’ordine: va collegata prima di raccogliere richieste vere.
+`worker.js` riceve il modulo e risponde con un codice. Non invia ancora email e non salva l’ordine: va collegato prima di raccogliere richieste vere.

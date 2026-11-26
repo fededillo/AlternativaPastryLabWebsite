@@ -154,7 +154,7 @@ function bindForm() {
       const payload = await response.json().catch(() => ({}));
       if (response.status === 404) {
         status.className = "error";
-        status.textContent = "L’invio si attiva su Cloudflare Pages, oppure con l’anteprima Wrangler.";
+        status.textContent = "L’invio si attiva quando il sito è pubblicato su Cloudflare, oppure con l’anteprima Wrangler.";
         return;
       }
       if (!response.ok || !payload.ok) {
