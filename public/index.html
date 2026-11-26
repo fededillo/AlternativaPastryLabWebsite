@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alternativa Pastry Lab</title>
+  <meta name="description" content="Laboratorio di pasticceria. Catalogo, presentazione e richieste.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">
+      <strong>Alternativa</strong>
+      <span>Pastry Lab</span>
+    </a>
+    <nav class="nav" aria-label="Principale">
+      <a href="/" aria-current="page">Home</a>
+      <a href="/catalogo.html">Catalogo</a>
+      <a href="/chi-sono.html">Chi sono</a>
+      <a href="/richiesta.html">Richiedi <span class="badge" data-richiesta-count hidden>0</span></a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Laboratorio di pasticceria</p>
+        <h1>Pasticceria su richiesta.</h1>
+      </div>
+      <p class="lede">Un sito essenziale per presentare il laboratorio, mostrare il catalogo e raccogliere richieste. I prodotti si aggiungono dopo, in un unico file.</p>
+      <div class="actions">
+        <a class="button" href="/catalogo.html">Vai al catalogo</a>
+        <a class="button secondary" href="/chi-sono.html">Chi sono</a>
+      </div>
+    </section>
+
+    <section class="grid steps" aria-label="Come funziona">
+      <article class="panel">
+        <span>01</span>
+        <h2>Guardi</h2>
+        <p>Il catalogo elenca solo i prodotti presenti nel file. Oggi è vuoto.</p>
+      </article>
+      <article class="panel">
+        <span>02</span>
+        <h2>Chiedi</h2>
+        <p>Si può scrivere una richiesta libera, anche senza scegliere una scheda.</p>
+      </article>
+      <article class="panel">
+        <span>03</span>
+        <h2>Concordi</h2>
+        <p>Il modulo raccoglie nome, contatto e messaggio. L’invio email arriva in un secondo momento.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Alternativa Pastry Lab</span>
+    <span>© <span data-year></span></span>
+  </footer>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
