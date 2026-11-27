@@ -18,8 +18,8 @@
   </a>
 
   <main>
-    <section class="scroll-cue" aria-label="Introduzione">
-      <p>Scrooool<br>down</p>
+    <section class="scroll-cue" aria-label="Alternativa Pastry Lab">
+      <img src="/images/hero-screen.svg" alt="Alternativa Pastry Lab. Scrooool down.">
     </section>
 
     <section class="statement">
@@ -65,6 +65,16 @@
     </section>
   </main>
 
+  <script>
+    const cue = document.querySelector(".scroll-cue");
+    const wa = document.querySelector(".wa-float");
+    if (cue && wa) {
+      wa.hidden = true;
+      new IntersectionObserver(([entry]) => {
+        wa.hidden = entry.isIntersecting && entry.intersectionRatio > 0.55;
+      }, { threshold: [0.55] }).observe(cue);
+    }
+  </script>
   <footer class="home-footer">
     <nav aria-label="Contatti">
       <a href="/catalogo.html">Catalogo</a>
